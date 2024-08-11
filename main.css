@@ -1,0 +1,184 @@
+html {
+    font-family: "Signika", sans-serif;
+    background-color: rgba(15, 23, 42, 255);
+    margin: 0%;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 1);
+    text-align: right;
+    padding: 4px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:before{
+    content: '';
+    background:rgba(85, 211, 192, 255);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right:50%;
+    left:50%;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.hover-nav{
+    background-position: 0;
+}
+
+.hover-nav:hover::before{
+    left:0;
+    right:0;
+    width:100%;
+}
+
+.intro {
+    color: white;
+    margin-top: 20%;
+    margin-left: 58%;
+    font-size: 40px;
+    padding-right: 1px;
+    text-decoration: none;
+}
+
+.helo {
+    color: rgba(85, 211, 192, 255);
+    font-size: 50%;
+}
+
+.helo::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color:rgba(85, 211, 192, 255);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.centered-text {
+    position: relative;
+    align-items: left;
+    justify-self: center;
+}
+
+.fade {
+    position: absolute;
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    color: rgba(85, 211, 192, 255);
+}
+
+.reverse {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes fade {
+
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about{
+    color:white;
+    margin-top:25%;
+    margin-left: 280px;
+    margin-right: 280px;
+    font-size:20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+    padding-top: 250px;
+}
+
+.about-heading{
+    color: rgba(85, 211, 192, 255);
+    text-align: center;
+}
+
+.projects{
+    color:white;
+    margin-top:35%;
+    margin-left: 280px;
+    margin-right: 280px;
+    font-size:20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+    padding-top: 100px ;
+
+}
+
+.project-heading{
+    color: rgba(85, 211, 192, 255);
+    text-align: center;
+}
+
+.favi-image{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    width: 60px;
+    height:60px;
+    border-radius:2px;
+    z-index: 1;
+}
+
+.ico{
+    color: white;
+}
+
+.contact{
+    padding-top: 100px;
+    padding-bottom: 500px;
+}
+
+.contact-heading{
+    text-align: center;
+    padding-top: 250px;
+    color: rgba(85, 211, 192, 255);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    padding-top: 30px;
+}
+
+.ico i {
+    font-size: 3em;
+}
