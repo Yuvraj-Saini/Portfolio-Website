@@ -1,24 +1,25 @@
 html {
     font-family: "Signika", sans-serif;
     background-color: rgba(15, 23, 42, 255);
-    margin: 0%;
+    margin: 0;
     color: white;
     scroll-behavior: smooth;
 }
 
-.nav{
+.nav {
     font-size: 20px;
     color: white;
     text-transform: uppercase;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     background-color: rgba(15, 23, 42, 1);
     text-align: right;
-    padding: 4px;
+    padding: 4px 16px;
+    z-index: 10;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: white;
     margin-right: 25px;
@@ -28,26 +29,27 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-.nav-link:before{
+.nav-link:before {
     content: '';
-    background:rgba(85, 211, 192, 255);
+    background: rgba(85, 211, 192, 255);
     display: block;
     position: absolute;
-    bottom: 0px;
-    right:50%;
-    left:50%;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
     width: 0;
     height: 3px;
     transition: all 0.3s ease-in-out;
 }
-.hover-nav{
+
+.hover-nav {
     background-position: 0;
 }
 
-.hover-nav:hover::before{
-    left:0;
-    right:0;
-    width:100%;
+.hover-nav:hover::before {
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .intro {
@@ -64,12 +66,12 @@ html {
     font-size: 50%;
 }
 
-.helo::before{
+.helo::before {
     content: "";
     display: inline-block;
     width: 12px;
     height: 2px;
-    background-color:rgba(85, 211, 192, 255);
+    background-color: rgba(85, 211, 192, 255);
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -95,23 +97,22 @@ html {
 }
 
 @keyframes fade {
-
     0%,
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
-.about{
-    color:white;
-    margin-top:25%;
+.about,
+.projects {
+    color: white;
+    margin-top: 25%;
     margin-left: 280px;
     margin-right: 280px;
-    font-size:20px;
+    font-size: 20px;
     padding-right: 20px;
     text-decoration: none;
     font-weight: 400;
@@ -121,64 +122,133 @@ html {
     padding-top: 250px;
 }
 
-.about-heading{
+.projects {
+    margin-top: 35%;
+    padding-top: 100px;
+}
+
+.about-heading,
+.project-heading {
     color: rgba(85, 211, 192, 255);
     text-align: center;
 }
 
-.projects{
-    color:white;
-    margin-top:35%;
-    margin-left: 280px;
-    margin-right: 280px;
-    font-size:20px;
-    padding-right: 20px;
-    text-decoration: none;
-    font-weight: 400;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 30px;
-    padding-top: 100px ;
-
-}
-
-.project-heading{
-    color: rgba(85, 211, 192, 255);
-    text-align: center;
-}
-
-.favi-image{
+.favi-image {
     position: fixed;
     top: 10px;
-    left:10px;
+    left: 10px;
     width: 60px;
-    height:60px;
-    border-radius:2px;
-    z-index: 1;
+    height: 60px;
+    border-radius: 2px;
+    z-index: 11;
 }
 
-.ico{
+.ico {
     color: white;
 }
 
-.contact{
+.contact {
     padding-top: 100px;
     padding-bottom: 500px;
 }
 
-.contact-heading{
+.contact-heading {
     text-align: center;
     padding-top: 250px;
     color: rgba(85, 211, 192, 255);
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
-    gap:40px;
+    gap: 40px;
     padding-top: 30px;
+    flex-wrap: wrap;
 }
 
 .ico i {
     font-size: 3em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .about,
+    .projects {
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 18px;
+        padding-top: 120px;
+    }
+    .intro {
+        margin-left: 40%;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .about,
+    .projects {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 16px;
+        padding-top: 80px;
+    }
+    .intro {
+        margin-left: 10%;
+        font-size: 26px;
+    }
+    .favi-image {
+        width: 40px;
+        height: 40px;
+    }
+    .nav {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .ico i {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .about,
+    .projects {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        padding-top: 60px;
+    }
+    .intro {
+        margin-left: 0;
+        margin-top: 100px;
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .nav {
+        font-size: 14px;
+        padding: 4px 2px;
+        text-align: center;
+    }
+    .nav-link {
+        margin-right: 10px;
+        padding: 5px 0;
+    }
+    .favi-image {
+        width: 32px;
+        height: 32px;
+        top: 5px;
+        left: 5px;
+    }
+    .contact-heading {
+        padding-top: 80px;
+        font-size: 1.2em;
+    }
+    .icons {
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .ico i {
+        font-size: 1.5em;
+    }
 }
