@@ -97,13 +97,90 @@ html {
 }
 
 @keyframes fade {
+
     0%,
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
+}
+
+.project {
+    background: rgba(85, 211, 192, 0.08);
+    border: 2px solid rgba(85, 211, 192, 0.4);
+    border-radius: 18px;
+    padding: 28px 32px;
+    margin: 32px 0;
+    box-shadow: 0 4px 24px 0 rgba(85, 211, 192, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project h3 {
+    color: rgba(85, 211, 192, 1);
+    margin-top: 0;
+    text-align: center;
+}
+
+.project:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 32px 0 rgba(85, 211, 192, 0.18);
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+}
+
+.project-link:hover,
+.project-link:focus {
+    background: rgba(85, 211, 192, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(85, 211, 192, 0.25);
+    outline: none;
+    transform: translateY(-6px) scale(1.02);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.project,
+.project-link {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: rgba(85, 211, 192, 0.08);
+    border: 2px solid rgba(85, 211, 192, 0.4);
+    border-radius: 18px;
+    padding: 18px 18px;
+    margin: 0;
+    box-shadow: 0 4px 24px 0 rgba(85, 211, 192, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.project h3,
+.project-link h3 {
+    color: rgba(85, 211, 192, 1);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.project p,
+.project-link p {
+    font-size: 0.98em;
+    line-height: 1.5;
 }
 
 .about,
@@ -172,6 +249,7 @@ html {
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
+
     .about,
     .projects {
         margin-left: 100px;
@@ -179,6 +257,7 @@ html {
         font-size: 18px;
         padding-top: 120px;
     }
+
     .intro {
         margin-left: 40%;
         font-size: 32px;
@@ -186,6 +265,7 @@ html {
 }
 
 @media (max-width: 900px) {
+
     .about,
     .projects {
         margin-left: 40px;
@@ -193,24 +273,39 @@ html {
         font-size: 16px;
         padding-top: 80px;
     }
+
     .intro {
         margin-left: 10%;
         font-size: 26px;
     }
+
     .favi-image {
         width: 40px;
         height: 40px;
     }
+
     .nav {
         font-size: 16px;
         padding: 4px 8px;
     }
+
     .ico i {
         font-size: 2em;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project,
+    .project-link {
+        padding: 14px 10px;
     }
 }
 
 @media (max-width: 600px) {
+
     .about,
     .projects {
         margin-left: 10px;
@@ -218,6 +313,7 @@ html {
         font-size: 14px;
         padding-top: 60px;
     }
+
     .intro {
         margin-left: 0;
         margin-top: 100px;
@@ -225,29 +321,35 @@ html {
         text-align: center;
         padding-right: 0;
     }
+
     .nav {
         font-size: 14px;
         padding: 4px 2px;
         text-align: center;
     }
+
     .nav-link {
         margin-right: 10px;
         padding: 5px 0;
     }
+
     .favi-image {
         width: 32px;
         height: 32px;
         top: 5px;
         left: 5px;
     }
+
     .contact-heading {
         padding-top: 80px;
         font-size: 1.2em;
     }
+
     .icons {
         gap: 20px;
         padding-top: 20px;
     }
+
     .ico i {
         font-size: 1.5em;
     }
