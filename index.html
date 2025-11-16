@@ -4,74 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuvraj Saini</title>
+  <title>Yuvraj Saini Portfolio</title>
   <link href="main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/821ab88ce8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <a href="#">
-    <img class="favi-image" src="favicon_io/apple-touch-icon.png">
-  </a>
+  <!-- Animated Background -->
+  <div class="background-animation">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <nav class="nav">
-    <a href="#" class="nav-link hover-nav"><span>Home</span></a>
-    <a href="#about_me" class="nav-link hover-nav"><span>About</span></a>
-    <a href="#proj" class="nav-link hover-nav"><span>Projects</span></a>
-    <a href="#conta" class="nav-link hover-nav"><span>Contact</span></a>
+    <a href="#" class="nav-link"><span>Home</span></a>
+    <a href="#about" class="nav-link"><span>About</span></a>
+    <a href="#work" class="nav-link"><span>Work</span></a>
+    <a href="#contact" class="nav-link"><span>Contact</span></a>
   </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Yuvraj Saini</h1>
+      <div class="hero-roles">
+        <p class="hero-role-text">I build</p>
+        <div class="role-container">
+          <span class="role active">Scalable Web Apps</span>
+          <span class="role">Interactive UIs</span>
+          <span class="role">Efficient Solutions</span>
+        </div>
+      </div>
+      <p class="hero-description">Front-end & Software Developer specializing in building scalable web applications and innovative digital solutions</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="intro">
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p class="about-intro">I'm a dedicated developer focused on building robust, scalable, and user-friendly applications.</p>
+        <p>Currently pursuing B.Tech in Computer Science at Jaypee University of Information Technology, I specialize in front-end development and full-stack solutions with a strong foundation in software engineering principles.</p>
+        <p>My journey combines a passion for creating beautiful user interfaces with the technical expertise to build efficient, scalable applications using modern technologies and best practices.</p>
+        
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Front-end Development</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Tools & Frameworks</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Webpack</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">JSON</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Core Competencies</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Web Performance</span>
+              <span class="skill-tag">UI/UX Principles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h1 class="name"><span class="helo">Hello World<br></span>I am Yuvraj Saini,</h1>
-
-    <p class="centred-text">I am a&nbsp <span class="fade reverse"> Front-end Web Developer</span><span class="fade">
-        Graphic Designer</span></p>
-
-  </div>
-
-  <div class="about" id="about_me">
-    <h1 class="about-heading">About Me</h1>
-    <p class="about-text">I am a Front-end Web Developer and Graphic Designer. I am currently pursuing my B.Tech in
-      Computer Science and Engineering from Jaypee University of Information Technology. My journey began with a
-      curiosity about how websites work, and now I'm dedicated to learning and growing in this dynamic field. Currently
-      gaining hands-on experience with HTML, CSS, and JavaScript, I'm eager to explore the fundamentals of front-end
-      development. I've been working on Personal Projects to build a strong foundation and turn theoretical knowledge
-      into practical skills.</p>
-  </div>
-
-  <div class="projects" id="proj">
-    <h1 class="project-heading">My Projects</h1>
-    <div class="project-grid">
-      <a class="project project-link" href="https://multi-web-app.netlify.app/" target="_blank">
-        <h3>Multi Web App</h3>
-        <img src="images/image1.png" alt="Multi Web App Preview" class="project-preview">
-        <p>A collection of multiple web applications like Quiz, Jokes, Weather app built using HTML, CSS, and
-          JavaScript. This project demonstrates my ability to bring multiple apps under one unified interface.</p>
+  <!-- Projects Section -->
+  <section class="projects" id="work">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Selected Work</h2>
+    </div>
+    <div class="projects-grid">
+      <a class="project-card" href="https://multi-web-app.netlify.app/" target="_blank">
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">Async/Await</span>
+          </div>
+          <h3 class="project-title">Multi Web App Collection</h3>
+          <p class="project-description">A feature-rich web application suite featuring interactive Quiz engine, Jokes generator, and real-time Weather app. Implements RESTful API integration, asynchronous JavaScript, error handling, and modular component architecture for scalability and maintainability.</p>
+        </div>
       </a>
-      <a class="project project-link" href="https://list-todo28.netlify.app/" target="_blank">
-        <h3>Todo-List</h3>
-        <img src="images/image2.png" alt="Todo-List Preview" class="project-preview">
-        <p>Developed a Dynamic To-Do List using JavaScript DOM manipulation. These projects helped strengthen my
-          understanding of form structure & styling, JavaScript validation techniques, and DOM manipulation
-          fundamentals.</p>
+
+      <a class="project-card" href="https://list-todo28.netlify.app/" target="_blank">
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript ES6+</span>
+            <span class="project-tag">Local Storage API</span>
+            <span class="project-tag">DOM Manipulation</span>
+            <span class="project-tag">CRUD Operations</span>
+          </div>
+          <h3 class="project-title">Advanced Todo Application</h3>
+          <p class="project-description">A sophisticated task management system with full CRUD functionality, persistent storage using Local Storage API, real-time UI updates, and filtering capabilities. Built with clean code principles, event delegation, and object-oriented programming patterns.</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Yuvraj-Saini/e-commerce-site" target="_blank">
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-description">Modern e-commerce web application with dynamic product catalog, shopping cart functionality, and responsive design. Features include state management with React hooks, component-based architecture, and optimized performance for seamless user experience.</p>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Yuvraj-Saini" target="_blank">
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Tailwind CSS</span>
+          </div>
+          <h3 class="project-title">Analytics Dashboard</h3>
+          <p class="project-description">Interactive data visualization dashboard built with React and TypeScript. Features dynamic charts, real-time data updates, responsive design with Tailwind CSS, and optimized performance using React.memo and lazy loading techniques.</p>
+        </div>
       </a>
     </div>
-  </div>
-  <div class="contact" id="conta">
-    <h1 class="contact-heading">Lets Colaborate!</h1>
-    <div class="icons">
-      <a class="ico" href="https://github.com/Yuvraj-Saini" target="_blank"><i
-          class="fa-brands fa-github fa-2xl"></i></a>
-      <a class="ico" href="https://www.linkedin.com/in/yuvraj-saini04/" target="_blank"><i
-          class="fa-brands fa-linkedin fa-2xl"></i></a>
-      <!--<a class="ico" href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>-->
-    </div>
+  </section>
 
-  </div>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-content">
+      <p class="contact-intro">I'm always open to discussing software development opportunities, collaborations, or innovative project ideas.</p>
+      <div class="contact-links">
+        <a class="contact-card" href="https://github.com/Yuvraj-Saini" target="_blank">
+          <div class="contact-icon">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="contact-details">
+            <h4>GitHub</h4>
+            <p>Check out my repositories</p>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/yuvraj-saini04/" target="_blank">
+          <div class="contact-icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="contact-details">
+            <h4>LinkedIn</h4>
+            <p>Let's connect professionally</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
 </body>
 
