@@ -459,6 +459,18 @@ section {
     border-color: rgba(0, 119, 182, 0.5);
 }
 
+.project-card.featured {
+    border-color: rgba(0, 119, 182, 0.35);
+    grid-column: 1 / -1;
+}
+
+.project-date {
+    font-size: 0.85rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
 .project-info {
     position: relative;
     z-index: 1;
